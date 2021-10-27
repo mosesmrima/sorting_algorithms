@@ -26,7 +26,7 @@ void sort(int *arr, int left, int right, size_t size)
 	{
 		p = split(arr, left, right, size);
 		sort(arr, left, p - 1, size);
-		sort_alg(arr, p + 1, right, size);
+		sort(arr, p + 1, right, size);
 	}
 }
 
